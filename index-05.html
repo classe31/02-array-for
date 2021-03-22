@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script type="text/javascript">
+
+      // dimmi in che posizione (la prima posizione è 0) si trova il numero 2 (se è presente più di una volta, dammi l'ultima)
+
+      var trovaIl2 = [0, 2, 4, 1, 2, 3, 6, 8, 2];
+
+      var posizioneDelDue = -1;
+      var isPosizioneTrovata = false;
+
+      for(var i = trovaIl2.length - 1; i >= 0; i--) {
+
+        if (isPosizioneTrovata == false && trovaIl2[i] == 2) {
+
+          isPosizioneTrovata = true;
+          posizioneDelDue = i;
+        }
+      }
+
+      if (posizioneDelDue != -1) {
+
+        console.log(posizioneDelDue);
+
+      } else {
+
+        console.log('Il numero 2 non è presente');
+      }
+
+    </script>
+
+  </head>
+  <body>
+
+  </body>
+</html>
